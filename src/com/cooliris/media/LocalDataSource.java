@@ -402,6 +402,9 @@ public class LocalDataSource implements DataSource {
             // If the database operation failed for any reason.
             ;
         }
+        if (item == null)
+            return null;
+
         return item;
     }
 
